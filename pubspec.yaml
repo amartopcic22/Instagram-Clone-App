@@ -33,7 +33,9 @@ dependencies:
   path_provider: ^0.5.0+1
   firebase_messaging: ^4.0.0+1
   firebase_storage: ^2.1.0+1
-  flutter_svg:
+  flutter_icons: ^1.1.0
+  keyboard_avoider: ^0.1.2
+  flutter_svg: ^0.19.3
 
 dev_dependencies:
   flutter_test:

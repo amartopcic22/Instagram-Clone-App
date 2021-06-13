@@ -56,7 +56,7 @@ class _ProfilePageState extends State<ProfilePage> {
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: <Widget>[
-                              createColumns("posts", 2),
+                              createColumns("posts", 3),
                               createColumns("followers", 118),
                               createColumns("following", 176),
                             ],
@@ -182,19 +182,20 @@ class _ProfilePageState extends State<ProfilePage> {
           child: Row(
             children: <Widget>[
               SizedBox(
-                  child: Container(
+                child: Container(
                   width: 17.0,
                   height: 17.0,
                   decoration: BoxDecoration(
                     image: DecorationImage(
-                      image:
-                          AssetImage("assets/images/lock.jpg"),
+                      image: AssetImage("assets/images/lock.jpg"),
                       fit: BoxFit.cover,
                     ),
                   ),
                 ),
-                ),
-                SizedBox(width: 3,),
+              ),
+              SizedBox(
+                width: 3,
+              ),
               Text("amart",
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
             ],
@@ -209,16 +210,15 @@ class _ProfilePageState extends State<ProfilePage> {
               children: <Widget>[
                 SizedBox(
                   child: Container(
-                  width: 25.0,
-                  height: 25.0,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image:
-                          AssetImage("assets/images/add.jpg"),
-                      fit: BoxFit.cover,
+                    width: 25.0,
+                    height: 25.0,
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                        image: AssetImage("assets/images/add.jpg"),
+                        fit: BoxFit.cover,
+                      ),
                     ),
                   ),
-                ),
                 ),
                 IconButton(
                   icon: Icon(Icons.menu, color: Colors.black),
